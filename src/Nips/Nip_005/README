@@ -1,0 +1,14 @@
+# Nip_005
+
+Questo nip implementa la possibilità per gli user di
+registrare i propri metadata su server/relay compatibili con
+nip_05. In un evento di tipo `0`, ovvero `metadata`, viene
+aggiunta la possibilità di includere nell'oggetto metadata
+un campo `nip05`, il quale valore corrisponde ad una string
+in formato `bob@example.com`, dove `example.com` è un
+endpoint che accetta una richiesta di tipo
+`https://example.com/.well-known/nostr.json?name=bob`.
+
+In pratica questi eventi includono un link verso un server
+tramite il quale è possibile recuperare le informazioni
+legate alla chiave pubblica (`user`) che ha firmato l'evento

@@ -1,0 +1,16 @@
+# Nostr toolbox
+
+## Description
+
+This package goal is to be a reliable source for
+informations related to the `Nostr` protocol.
+
+
+### Nostr
+
+Is an open-source protocol for communication, it facilitates
+the communications amongst relays and clients.
+
+# Structure
+
+# What is already done

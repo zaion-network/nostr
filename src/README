@@ -1,0 +1,41 @@
+# SRC folder
+
+## Contents
+
+## Basic Types
+
+Tipi che descrivono come devono essere formattate le varie
+variabili interessate nella comunicazine fra server e
+client.
+
+## Kinds
+
+In questo file vengono descritti i vari kind che possono
+essere assegnati ad una nota/evento su `Nostr`.
+
+### Contents
+
+- [ ] kinds: enum
+- [ ] kindDefinition: enum
+- [ ] KindDefinition: interface
+- [ ] KindDefinition: class
+- [ ] kindRanges: enum
+- [ ] KindRange: interface
+- [ ] KindRange: class
+
+## Messages
+
+Qui si descrie il type del messaggio da inviare ai relay.
+
+## Nips
+
+Questa classe rappresenta un nip.
+
+## Tags
+
+Questa classe server per descrivere i tags da aggiungere al
+messaggio.
+
+## Nostr
+
+Contiene il namespace che esporta tutti gli altri moduli.

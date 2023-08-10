@@ -1,0 +1,10 @@
+# Nips
+
+Questa cartella contiene le istanze della classe `Nips.Nip`.
+In ogni istanza possono essere presenti le seguenti
+informazioni riguardanti il nip in questione:
+
+- Testo integrale del nip consultabile come commento del
+  valore in `js` e `ts`.
+- Eventuali `kinds`, `message-types` o `tags` dichiarate nel
+  nip in questione.

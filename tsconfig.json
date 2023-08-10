@@ -1,0 +1,6 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "isolatedModules": false },
+  "include": ["src/index.ts", "src"],
+  "exclude": ["scripts", "dist"]
+}
