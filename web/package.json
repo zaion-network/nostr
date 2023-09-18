@@ -1,5 +1,0 @@
-{
-  "main": "dist/zaionstate-nostr-web.cjs.js",
-  "module": "dist/zaionstate-nostr-web.esm.js",
-  "types": "dist/zaionstate-nostr-web.cjs.d.ts"
-}

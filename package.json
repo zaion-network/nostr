@@ -2,33 +2,14 @@
   "name": "@zaionstate/nostr",
   "version": "0.0.0",
   "description": "",
-  "main": "dist/zaionstate-nostr.cjs.js",
-  "module": "dist/zaionstate-nostr.esm.js",
   "license": "MIT",
-  "types": "dist/declarations/src/index.d.ts",
   "scripts": {
-    "typecheck": "tsc --noEmit",
-    "fix:pre": "yarn preconstruct fix",
-    "fix": "fix:pre",
-    "build:pkg": "yarn preconstruct build",
-    "build": "build:pkg",
-    "dev:watch": "preconstruct watch",
-    "dev": "yarn dev:watch"
+    "build": "./build.ts"
   },
   "devDependencies": {
-    "@babel/plugin-transform-typescript": "7.22.15",
-    "@babel/preset-env": "7.22.15",
-    "@babel/preset-typescript": "7.22.15",
-    "@preconstruct/cli": "2.8.1"
+    "bun-types": "latest"
   },
-  "preconstruct": {
-    "entrypoints": [
-      "index.ts",
-      "web.ts"
-    ]
-  },
-  "files": [
-    "dist",
-    "web"
-  ]
+  "peerDependencies": {
+    "typescript": "5.2.2"
+  }
 }
