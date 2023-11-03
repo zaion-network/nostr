@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "bun-types": "latest",
+    "nostr-tools": "^1.17.0",
     "@noble/secp256k1": "^2.0.0"
   },
   "peerDependencies": {
