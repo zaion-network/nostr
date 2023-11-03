@@ -15,7 +15,13 @@ const res3 = await Bun.build({
   outdir: "dist/server/noble",
   target: "node",
 });
+const res4 = await Bun.build({
+  entrypoints: ["./server/relay/index.ts"],
+  outdir: "dist/server/relay",
+  target: "node",
+});
 
 console.log(res);
 console.log(res2);
 console.log(res3);
+console.log(res4);
