@@ -73,8 +73,8 @@ declare module "../../Nostr" {
       }
     }
     namespace BasicTypes {
-      type Bytes32Hex<T extends string> = T;
-      type Bytes64Hex<T extends string> = T;
+      type Bytes32Hex<T extends string> = T; // 32 bytes hex encoded sha256
+      type Bytes64Hex<T extends string> = T; // 64 bytes hex encoded sha256
       type Byte32LoCaseHex<T extends string> = T;
       type Sha<T extends string> = T;
       type RecommendedRelayURL = string;
