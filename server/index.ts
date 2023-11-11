@@ -1,3 +1,6 @@
 import * as nostr from "nostr-tools";
-import { serialize } from "../src/utils/serialize";
+export { hashObject } from "../src/utils/hashObject";
+export { serialize } from "../src/utils/serialize";
+export { hexToUtf8 } from "../src/utils/hexToUtf";
+export { AccessTokenManager } from "../src/classes/AccessTokenManager";
 export default nostr;
