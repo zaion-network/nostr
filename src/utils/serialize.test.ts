@@ -1,8 +1,21 @@
+import { describe, it, expect } from "bun:test";
 import { serialize } from "./serialize";
-// const serialized0 = serialize(["baby"], { algorythim: "hmac" });
-const serialized1 = serialize(["baby"], { length: 64 });
-const serialized2 = serialize(["baby"]);
-const serialized3 = serialize(["baby"], { length: 32, algorythim: "sha256" });
-// console.log(serialized0);
-console.log(serialized1);
-console.log(serialized2);
+
+describe(`${serialize.name}`, () => {
+  it("controlla membri", () => {
+    expect(serialize).toBeTruthy();
+  });
+  it("test1", () => {
+    const objToSerialize = {
+      oggetto: "da serializzare",
+      per: {
+        testare: "il funzionamento",
+        di: { serialize: "in serialize" },
+      },
+    };
+    const EXPECTED =
+      "7b226f67676574746f223a2264612073657269616c697a7a617265222c22706572223a7b2274657374617265223a22696c2066756e7a696f6e616d656e746f222c226469223a7b2273657269616c697a65223a22696e2073657269616c697a65227d7d7d";
+    const hex = serialize(objToSerialize);
+    expect(hex).toEqual(EXPECTED);
+  });
+});
